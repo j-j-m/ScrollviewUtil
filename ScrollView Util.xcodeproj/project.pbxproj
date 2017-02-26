@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B8FF4249459B7E98FAEF0BF /* Pods_ScrollView_UtilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9C6A2F7E815F4698315FBA /* Pods_ScrollView_UtilUITests.framework */; };
+		5C5BD486FA6A5D09875847DB /* Pods_ScrollView_UtilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E62E9CB3465F03CCDC266D /* Pods_ScrollView_UtilTests.framework */; };
+		779AA49AC77A6AB5A74ED673 /* Pods_ScrollView_Util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9215D71584A478EEA241FCC6 /* Pods_ScrollView_Util.framework */; };
+		A016E9B41E6153170086A7BF /* ScopeDetailsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016E9B31E6153170086A7BF /* ScopeDetailsPanel.swift */; };
+		A0B7FDD51E62375300EAE02A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD41E62375300EAE02A /* Node.swift */; };
+		A0B7FDD71E62ACCF00EAE02A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */; };
+		A0B7FDD91E62AFE800EAE02A /* DragDropProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD81E62AFE800EAE02A /* DragDropProtocol.swift */; };
 		A0F08F121E5EB1B900A653BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F111E5EB1B900A653BE /* AppDelegate.swift */; };
 		A0F08F141E5EB1B900A653BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F131E5EB1B900A653BE /* ViewController.swift */; };
 		A0F08F171E5EB1B900A653BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F08F151E5EB1B900A653BE /* Main.storyboard */; };
@@ -14,6 +21,9 @@
 		A0F08F1C1E5EB1B900A653BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F08F1A1E5EB1B900A653BE /* LaunchScreen.storyboard */; };
 		A0F08F271E5EB1B900A653BE /* ScrollView_UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F261E5EB1B900A653BE /* ScrollView_UtilTests.swift */; };
 		A0F08F321E5EB1B900A653BE /* ScrollView_UtilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F311E5EB1B900A653BE /* ScrollView_UtilUITests.swift */; };
+		A0F08F401E61299700A653BE /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F3F1E61299700A653BE /* SlideMenuController.swift */; };
+		A0F08F421E612CA600A653BE /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F411E612CA600A653BE /* ContainerController.swift */; };
+		A0F08F441E6148D900A653BE /* ObjectDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F431E6148D900A653BE /* ObjectDrawerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A3811474BA35119C956CDDB /* Pods-ScrollView UtilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView UtilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView UtilTests/Pods-ScrollView UtilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C56FD17B0AEC6BF53A0AD8A /* Pods-ScrollView Util.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView Util.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView Util/Pods-ScrollView Util.release.xcconfig"; sourceTree = "<group>"; };
+		43E38A6A1FC9D76BB129DC31 /* Pods-ScrollView Util.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView Util.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView Util/Pods-ScrollView Util.debug.xcconfig"; sourceTree = "<group>"; };
+		7D99DC8B596DACAF63C489F1 /* Pods-ScrollView UtilUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView UtilUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView UtilUITests/Pods-ScrollView UtilUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81281D9596580366E4ADE0EC /* Pods-ScrollView UtilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView UtilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView UtilTests/Pods-ScrollView UtilTests.release.xcconfig"; sourceTree = "<group>"; };
+		90E62E9CB3465F03CCDC266D /* Pods_ScrollView_UtilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollView_UtilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9215D71584A478EEA241FCC6 /* Pods_ScrollView_Util.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollView_Util.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A016E9B31E6153170086A7BF /* ScopeDetailsPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeDetailsPanel.swift; sourceTree = "<group>"; };
+		A0B7FDD41E62375300EAE02A /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A0B7FDD81E62AFE800EAE02A /* DragDropProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropProtocol.swift; sourceTree = "<group>"; };
 		A0F08F0E1E5EB1B900A653BE /* ScrollView Util.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScrollView Util.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08F111E5EB1B900A653BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0F08F131E5EB1B900A653BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,11 @@
 		A0F08F2D1E5EB1B900A653BE /* ScrollView UtilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScrollView UtilUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08F311E5EB1B900A653BE /* ScrollView_UtilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView_UtilUITests.swift; sourceTree = "<group>"; };
 		A0F08F331E5EB1B900A653BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F08F3F1E61299700A653BE /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		A0F08F411E612CA600A653BE /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		A0F08F431E6148D900A653BE /* ObjectDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDrawerController.swift; sourceTree = "<group>"; };
+		C962E8AD9A520DCD300E51A2 /* Pods-ScrollView UtilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollView UtilUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollView UtilUITests/Pods-ScrollView UtilUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD9C6A2F7E815F4698315FBA /* Pods_ScrollView_UtilUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollView_UtilUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779AA49AC77A6AB5A74ED673 /* Pods_ScrollView_Util.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5BD486FA6A5D09875847DB /* Pods_ScrollView_UtilTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8FF4249459B7E98FAEF0BF /* Pods_ScrollView_UtilUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6565A65E54DEC46FB98396D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9215D71584A478EEA241FCC6 /* Pods_ScrollView_Util.framework */,
+				90E62E9CB3465F03CCDC266D /* Pods_ScrollView_UtilTests.framework */,
+				CD9C6A2F7E815F4698315FBA /* Pods_ScrollView_UtilUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0B7FDDA1E62AFFF00EAE02A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A0B7FDD81E62AFE800EAE02A /* DragDropProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 		A0F08F051E5EB1B900A653BE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +128,8 @@
 				A0F08F251E5EB1B900A653BE /* ScrollView UtilTests */,
 				A0F08F301E5EB1B900A653BE /* ScrollView UtilUITests */,
 				A0F08F0F1E5EB1B900A653BE /* Products */,
+				ECB49858ED5BD6E969E7F4F5 /* Pods */,
+				6565A65E54DEC46FB98396D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +148,13 @@
 			children = (
 				A0F08F111E5EB1B900A653BE /* AppDelegate.swift */,
 				A0F08F131E5EB1B900A653BE /* ViewController.swift */,
+				A0F08F431E6148D900A653BE /* ObjectDrawerController.swift */,
+				A016E9B31E6153170086A7BF /* ScopeDetailsPanel.swift */,
+				A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */,
+				A0B7FDDA1E62AFFF00EAE02A /* Protocol */,
+				A0F08F411E612CA600A653BE /* ContainerController.swift */,
+				A0F08F3F1E61299700A653BE /* SlideMenuController.swift */,
+				A0B7FDD41E62375300EAE02A /* Node.swift */,
 				A0F08F151E5EB1B900A653BE /* Main.storyboard */,
 				A0F08F181E5EB1B900A653BE /* Assets.xcassets */,
 				A0F08F1A1E5EB1B900A653BE /* LaunchScreen.storyboard */,
@@ -125,6 +181,19 @@
 			path = "ScrollView UtilUITests";
 			sourceTree = "<group>";
 		};
+		ECB49858ED5BD6E969E7F4F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43E38A6A1FC9D76BB129DC31 /* Pods-ScrollView Util.debug.xcconfig */,
+				3C56FD17B0AEC6BF53A0AD8A /* Pods-ScrollView Util.release.xcconfig */,
+				1A3811474BA35119C956CDDB /* Pods-ScrollView UtilTests.debug.xcconfig */,
+				81281D9596580366E4ADE0EC /* Pods-ScrollView UtilTests.release.xcconfig */,
+				C962E8AD9A520DCD300E51A2 /* Pods-ScrollView UtilUITests.debug.xcconfig */,
+				7D99DC8B596DACAF63C489F1 /* Pods-ScrollView UtilUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0F08F361E5EB1B900A653BE /* Build configuration list for PBXNativeTarget "ScrollView Util" */;
 			buildPhases = (
+				9EC15BF70C5D3E278E0008BE /* [CP] Check Pods Manifest.lock */,
 				A0F08F0A1E5EB1B900A653BE /* Sources */,
 				A0F08F0B1E5EB1B900A653BE /* Frameworks */,
 				A0F08F0C1E5EB1B900A653BE /* Resources */,
+				55CFA4BE4A66A895799FEAED /* [CP] Embed Pods Frameworks */,
+				A776783B4E9E21C5B639D8C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0F08F391E5EB1B900A653BE /* Build configuration list for PBXNativeTarget "ScrollView UtilTests" */;
 			buildPhases = (
+				58E7E63858BC369A219AE1AF /* [CP] Check Pods Manifest.lock */,
 				A0F08F1E1E5EB1B900A653BE /* Sources */,
 				A0F08F1F1E5EB1B900A653BE /* Frameworks */,
 				A0F08F201E5EB1B900A653BE /* Resources */,
+				D9039F28217ED17201B3B37D /* [CP] Embed Pods Frameworks */,
+				47593168C16E238CDB04BE24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0F08F3C1E5EB1B900A653BE /* Build configuration list for PBXNativeTarget "ScrollView UtilUITests" */;
 			buildPhases = (
+				4F51C10DBF1761F1CC6DD496 /* [CP] Check Pods Manifest.lock */,
 				A0F08F291E5EB1B900A653BE /* Sources */,
 				A0F08F2A1E5EB1B900A653BE /* Frameworks */,
 				A0F08F2B1E5EB1B900A653BE /* Resources */,
+				CB7CA65F7A2DFB8D11BC0ABD /* [CP] Embed Pods Frameworks */,
+				E0B1F49504B6326882C16489 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +335,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47593168C16E238CDB04BE24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView UtilTests/Pods-ScrollView UtilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F51C10DBF1761F1CC6DD496 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55CFA4BE4A66A895799FEAED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView Util/Pods-ScrollView Util-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E7E63858BC369A219AE1AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC15BF70C5D3E278E0008BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A776783B4E9E21C5B639D8C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView Util/Pods-ScrollView Util-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7CA65F7A2DFB8D11BC0ABD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView UtilUITests/Pods-ScrollView UtilUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9039F28217ED17201B3B37D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView UtilTests/Pods-ScrollView UtilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B1F49504B6326882C16489 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollView UtilUITests/Pods-ScrollView UtilUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0F08F0A1E5EB1B900A653BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B7FDD71E62ACCF00EAE02A /* MasterViewController.swift in Sources */,
+				A0F08F441E6148D900A653BE /* ObjectDrawerController.swift in Sources */,
 				A0F08F141E5EB1B900A653BE /* ViewController.swift in Sources */,
+				A0F08F401E61299700A653BE /* SlideMenuController.swift in Sources */,
 				A0F08F121E5EB1B900A653BE /* AppDelegate.swift in Sources */,
+				A016E9B41E6153170086A7BF /* ScopeDetailsPanel.swift in Sources */,
+				A0B7FDD91E62AFE800EAE02A /* DragDropProtocol.swift in Sources */,
+				A0F08F421E612CA600A653BE /* ContainerController.swift in Sources */,
+				A0B7FDD51E62375300EAE02A /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +636,7 @@
 		};
 		A0F08F371E5EB1B900A653BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E38A6A1FC9D76BB129DC31 /* Pods-ScrollView Util.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BCYSH9FU9P;
@@ -426,6 +650,7 @@
 		};
 		A0F08F381E5EB1B900A653BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C56FD17B0AEC6BF53A0AD8A /* Pods-ScrollView Util.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BCYSH9FU9P;
@@ -439,6 +664,7 @@
 		};
 		A0F08F3A1E5EB1B900A653BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3811474BA35119C956CDDB /* Pods-ScrollView UtilTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +680,7 @@
 		};
 		A0F08F3B1E5EB1B900A653BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81281D9596580366E4ADE0EC /* Pods-ScrollView UtilTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +696,7 @@
 		};
 		A0F08F3D1E5EB1B900A653BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C962E8AD9A520DCD300E51A2 /* Pods-ScrollView UtilUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BCYSH9FU9P;
@@ -483,6 +711,7 @@
 		};
 		A0F08F3E1E5EB1B900A653BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D99DC8B596DACAF63C489F1 /* Pods-ScrollView UtilUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BCYSH9FU9P;
@@ -514,6 +743,7 @@
 				A0F08F381E5EB1B900A653BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0F08F391E5EB1B900A653BE /* Build configuration list for PBXNativeTarget "ScrollView UtilTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +752,7 @@
 				A0F08F3B1E5EB1B900A653BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0F08F3C1E5EB1B900A653BE /* Build configuration list for PBXNativeTarget "ScrollView UtilUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +761,7 @@
 				A0F08F3E1E5EB1B900A653BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

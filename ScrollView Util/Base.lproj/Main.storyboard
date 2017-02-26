@@ -1,26 +1,200 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KGq-Dm-vqv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Master Controller-->
+        <scene sceneID="Ebo-Cy-rvf">
+            <objects>
+                <viewController id="KGq-Dm-vqv" customClass="MasterController" customModule="ScrollView_Util" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5lo-lL-DQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="onr-Rf-eJn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3EN-a7-WcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bts-O7-j1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1455" y="-644"/>
+        </scene>
+        <!--Container Controller-->
+        <scene sceneID="avL-16-0F6">
+            <objects>
+                <viewController storyboardIdentifier="Workspace" id="cjo-02-cUL" customClass="ContainerController" customModule="ScrollView_Util" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J1D-7l-hew"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1N-z1-yis"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="28e-tt-3m2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-Ub-RAo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="embed" identifier="embedContentSegue" id="gsh-23-Rj9"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BO-Tg-M1b">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem systemItem="organize" id="KJD-3L-S5g">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="openObjectDrawerWithSender:" destination="cjo-02-cUL" id="IXB-bV-Rc5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b1N-z1-yis" firstAttribute="top" secondItem="Tph-Ub-RAo" secondAttribute="bottom" id="Kr0-B5-9kG"/>
+                            <constraint firstItem="Tph-Ub-RAo" firstAttribute="top" secondItem="0BO-Tg-M1b" secondAttribute="bottom" id="Syf-KX-yt1"/>
+                            <constraint firstItem="0BO-Tg-M1b" firstAttribute="top" secondItem="J1D-7l-hew" secondAttribute="bottom" id="V70-SQ-7yV"/>
+                            <constraint firstItem="0BO-Tg-M1b" firstAttribute="leading" secondItem="28e-tt-3m2" secondAttribute="leadingMargin" constant="-16" id="dia-gM-VN4"/>
+                            <constraint firstItem="Tph-Ub-RAo" firstAttribute="leading" secondItem="28e-tt-3m2" secondAttribute="leadingMargin" constant="-16" id="eWs-We-55X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0BO-Tg-M1b" secondAttribute="trailing" constant="-16" id="o7I-yW-UZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tph-Ub-RAo" secondAttribute="trailing" constant="-16" id="yxf-mC-Wmk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1W-E2-1Br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023.2" y="138.98050974512745"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView_Util" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.10000000000000001" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fw-47-N14">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fw-47-N14" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKs-B2-0wc"/>
+                            <constraint firstItem="2fw-47-N14" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kEo-lb-qgA"/>
+                            <constraint firstItem="2fw-47-N14" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mcY-us-ZPG"/>
+                            <constraint firstItem="2fw-47-N14" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="mfV-wr-gGY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="2fw-47-N14" id="ILV-nn-Xi0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-233" y="139"/>
+        </scene>
+        <!--Scope Details Panel-->
+        <scene sceneID="JvU-C3-UcB">
+            <objects>
+                <viewController storyboardIdentifier="DetailPanel" id="jvN-no-Pnh" customClass="ScopeDetailsPanel" customModule="ScrollView_Util" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6lH-s9-OIc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xda-6S-fUG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oWk-k8-I2P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEz-VZ-8re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="121"/>
+        </scene>
+        <!--Object Drawer Controller-->
+        <scene sceneID="Zid-Fo-mSh">
+            <objects>
+                <viewController storyboardIdentifier="ObjectDrawer" id="fjr-gp-SI8" customClass="ObjectDrawerController" customModule="ScrollView_Util" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dra-RT-XbQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JlA-Lv-uos"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X2r-b2-kuU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsG-t7-CKd">
+                                <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lFQ-D3-XQd"/>
+                                    <barButtonItem systemItem="stop" id="BwF-1Q-4eD">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="closeObjectDrawerWithSender:" destination="fjr-gp-SI8" id="NhW-X0-37e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hsW-Fb-n4a">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sg6-ag-gsd">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="3Iw-ib-eoA" customClass="ObjectCell" customModule="ScrollView_Util" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fjr-gp-SI8" id="QhY-Sr-Db7"/>
+                                    <outlet property="delegate" destination="fjr-gp-SI8" id="qeQ-Uw-5bM"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qsG-t7-CKd" firstAttribute="top" secondItem="Dra-RT-XbQ" secondAttribute="bottom" constant="20" id="BIf-oW-NhC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hsW-Fb-n4a" secondAttribute="trailing" constant="-16" id="JN8-nG-XBf"/>
+                            <constraint firstItem="hsW-Fb-n4a" firstAttribute="top" secondItem="qsG-t7-CKd" secondAttribute="bottom" id="K9B-GG-kHd"/>
+                            <constraint firstItem="qsG-t7-CKd" firstAttribute="width" secondItem="X2r-b2-kuU" secondAttribute="width" id="ToB-3v-TTg"/>
+                            <constraint firstItem="hsW-Fb-n4a" firstAttribute="leading" secondItem="X2r-b2-kuU" secondAttribute="leadingMargin" constant="-16" id="eKm-G3-x1z"/>
+                            <constraint firstItem="qsG-t7-CKd" firstAttribute="centerX" secondItem="X2r-b2-kuU" secondAttribute="centerX" id="fUr-UZ-G7E"/>
+                            <constraint firstItem="JlA-Lv-uos" firstAttribute="top" secondItem="hsW-Fb-n4a" secondAttribute="bottom" id="ubz-si-Vsj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hsW-Fb-n4a" id="Sac-wm-5gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wt-gJ-KlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2066.4000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

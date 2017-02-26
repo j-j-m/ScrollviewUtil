@@ -16,8 +16,7 @@ public protocol Node {
     var inlets: [AnyObject]? { get set }
     var outlets: [AnyObject]? { get set }
     
-    func graphRep() -> UIView
-    func selectionRep() -> ObjectCell
+    func graphRepresentation() -> UIView
 }
 
 
@@ -31,12 +30,12 @@ public extension Node {
         get { return UIColor.gray }
     }
 
-    func graphRep() -> UIView {
-        return UIView()
+    func graphRepresentation() -> UIView {
+        let view = UIView(frame: CGRect(x:0, y:0, width:100, height:100))
+        view.backgroundColor = color
+        return view
     }
-    func selectionRep() -> ObjectCell {
-        return ObjectCell()
-    }
+   
 
 }
 

@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollView Util/MasterViewController.swift"
+            timestampString = "509788176.921203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "handleLongPress(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScrollView_Util.MasterController.handleLongPress (__ObjC.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "ScrollView Util"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobmartin/Development/ScrollView%20Util/ScrollView%20Util/MasterViewController.swift"
+                  timestampString = "509787729.179576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScrollView_Util.MasterController.handleLongPress (__ObjC.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "ScrollView Util"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobmartin/Development/ScrollView%20Util/ScrollView%20Util/MasterViewController.swift"
+                  timestampString = "509787729.181185"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

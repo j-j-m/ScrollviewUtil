@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-class ObjectDrawerController: UIViewController {
+public class ObjectDrawerController: UIViewController {
     
     
     @IBOutlet var collectionView: UICollectionView!
     
-    var nodeTypeList: [GraphElement] = [ GraphElement(id: "a", name: "first", color: .red),
+    public var nodeTypeList: [GraphElement] = [ GraphElement(id: "a", name: "first", color: .red),
                          GraphElement(id: "b", name: "second", color: .green),
                          GraphElement(id: "c", name: "third", color: .blue),
                          GraphElement(id: "d", name: "fourth", color: .cyan),
@@ -29,38 +29,11 @@ class ObjectDrawerController: UIViewController {
         self.slideMenuController()?.closeRight()
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         
         collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: "Cell")
-        
-        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
-        lpgr.minimumPressDuration = 0.5
-        lpgr.delaysTouchesBegan = true
-        lpgr.delegate = self
-        
-        collectionView.addGestureRecognizer(lpgr)
     }
-    
-    
-    func handleLongPress(_ gestureReconizer: UILongPressGestureRecognizer) {
-        if gestureReconizer.state != UIGestureRecognizerState.began {
-            return
-        }
-        
-        let p = gestureReconizer.location(in: self.collectionView)
-        let indexPath = self.collectionView.indexPathForItem(at: p)
-        
-        if let index = indexPath {
-            self.slideMenuController()?.closeLeft()
-            self.slideMenuController()?.closeRight()
-            var cell = self.collectionView.cellForItem(at: index)
-            // do stuff with your cell, for example print the indexPath
-            print(index.row)
-        } else {
-            print("Could not find index path")
-        }
-    }
-    
+
 }
 
 public class ObjectCell: UICollectionViewCell {
@@ -79,7 +52,7 @@ extension ObjectDrawerController: UICollectionViewDataSource {
         return nodeTypeList.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ObjectCell
 
@@ -89,14 +62,16 @@ extension ObjectDrawerController: UICollectionViewDataSource {
     }
 }
 
-extension ObjectDrawerController: UICollectionViewDelegate {
-    
-}
+
+
+//extension ObjectDrawerController: UICollectionViewDelegate {
+//    
+//}
 
 
 extension ObjectDrawerController: UICollectionViewDelegateFlowLayout {
-    //1
-    func collectionView(_ collectionView: UICollectionView,
+
+    public func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width * 0.75
@@ -105,8 +80,10 @@ extension ObjectDrawerController: UICollectionViewDelegateFlowLayout {
 }
 
 
-extension ObjectDrawerController: UIGestureRecognizerDelegate {
-    
+extension ObjectDrawerController: DragDropSender {
+    public func send(_ object: Node) {
+        print("sending object")
+    }
 }
 
 

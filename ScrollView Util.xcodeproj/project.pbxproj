@@ -121,6 +121,39 @@
 			name = Protocol;
 			sourceTree = "<group>";
 		};
+		A0B7FDDB1E62B1E300EAE02A /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				A0F08F431E6148D900A653BE /* ObjectDrawerController.swift */,
+				A016E9B31E6153170086A7BF /* ScopeDetailsPanel.swift */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		A0B7FDDC1E62B1F700EAE02A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A0F08F3F1E61299700A653BE /* SlideMenuController.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		A0B7FDDD1E62B21D00EAE02A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0B7FDD41E62375300EAE02A /* Node.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A0B7FDDE1E62B22E00EAE02A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A0F08F111E5EB1B900A653BE /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		A0F08F051E5EB1B900A653BE = {
 			isa = PBXGroup;
 			children = (
@@ -146,15 +179,14 @@
 		A0F08F101E5EB1B900A653BE /* ScrollView Util */ = {
 			isa = PBXGroup;
 			children = (
-				A0F08F111E5EB1B900A653BE /* AppDelegate.swift */,
 				A0F08F131E5EB1B900A653BE /* ViewController.swift */,
-				A0F08F431E6148D900A653BE /* ObjectDrawerController.swift */,
-				A016E9B31E6153170086A7BF /* ScopeDetailsPanel.swift */,
 				A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */,
-				A0B7FDDA1E62AFFF00EAE02A /* Protocol */,
 				A0F08F411E612CA600A653BE /* ContainerController.swift */,
-				A0F08F3F1E61299700A653BE /* SlideMenuController.swift */,
-				A0B7FDD41E62375300EAE02A /* Node.swift */,
+				A0B7FDDE1E62B22E00EAE02A /* Delegate */,
+				A0B7FDDB1E62B1E300EAE02A /* Menus */,
+				A0B7FDDA1E62AFFF00EAE02A /* Protocol */,
+				A0B7FDDC1E62B1F700EAE02A /* Util */,
+				A0B7FDDD1E62B21D00EAE02A /* Model */,
 				A0F08F151E5EB1B900A653BE /* Main.storyboard */,
 				A0F08F181E5EB1B900A653BE /* Assets.xcassets */,
 				A0F08F1A1E5EB1B900A653BE /* LaunchScreen.storyboard */,

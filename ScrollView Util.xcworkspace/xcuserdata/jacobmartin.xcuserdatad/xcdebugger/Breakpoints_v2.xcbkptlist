@@ -17,38 +17,22 @@
             endingLineNumber = "82"
             landmarkName = "handleLongPress(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScrollView_Util.MasterController.handleLongPress (__ObjC.UILongPressGestureRecognizer) -&gt; ()"
-                  moduleName = "ScrollView Util"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jacobmartin/Development/ScrollView%20Util/ScrollView%20Util/MasterViewController.swift"
-                  timestampString = "509787729.179576"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScrollView_Util.MasterController.handleLongPress (__ObjC.UILongPressGestureRecognizer) -&gt; ()"
-                  moduleName = "ScrollView Util"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jacobmartin/Development/ScrollView%20Util/ScrollView%20Util/MasterViewController.swift"
-                  timestampString = "509787729.181185"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "352">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollView Util/FlatUIColors.swift"
+            timestampString = "509868948.227655"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "colorFromHexCode(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

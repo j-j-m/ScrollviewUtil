@@ -44,7 +44,7 @@ class MasterController: SlideMenuController, DragDropCoordinator {
     override func awakeFromNib() {
         
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
-        lpgr.minimumPressDuration = 0.5
+        lpgr.minimumPressDuration = 0.2
         lpgr.delaysTouchesBegan = true
         lpgr.delegate = self
         
@@ -88,7 +88,7 @@ extension MasterController {
                     self.slideMenuController()?.closeRight()
                     focusedObject = controller.nodeTypeList[index.item]
                     
-                    // do stuff with your cell, for example print the indexPath
+                    
                     print("index row \(index.item)")
                 } else {
                     print("Could not find index path")

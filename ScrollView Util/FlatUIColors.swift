@@ -7,23 +7,30 @@
 //
 
 import Foundation
-
+import UIKit
 
 /**
     Contains helpers for generating color values from the Flat UI color palette (see http://flatuicolors.com/).
  */
-public struct FlatUIColors
-{
+
 #if os(iOS)
     public typealias OSColor = UIColor
 #elseif os(OSX)
     public typealias OSColor = NSColor
 #endif
 
+public struct FlatUIColors
+{
+
+    public static func solidColorFromHexCode(_ hex:String) -> OSColor! {
+        return colorFromHexCode(hex + alphaHEX(1.0))
+    }
+
     /**
         Generates an NS- or UIColor from a hex color string.
 
         - parameter hex: The hex color string from which to create the color object.  '#' sign is optional.
+     
      */
     public static func colorFromHexCode(_ hex:String) -> OSColor!
     {
@@ -114,8 +121,10 @@ public struct FlatUIColors
     /**
         Contains hex color code strings for the Flat UI color palette.
      */
-    public struct ColorCodes
+    public struct ColorCodes: PropertyEnumerable
     {
+        static let instance: ColorCodes = ColorCodes()
+        
         public static let turquoise = "1abc9c"
         public static let greenSea  = "16a085"
         public static let mediumTurquoise = "4ECDC4"
@@ -156,6 +165,8 @@ public struct FlatUIColors
         public static let asbestos = "7F8C8D"
         public static let pumice = "D2D7D3"
         public static let lynch = "6C7A89"
+        
+        public static let list = [turquoise, greenSea, mediumTurquoise, lightSeaGreen, emerald, nephritis, gossip, salem, belizeHole, riptide, dodgerBlue, amethyst, wisteria, lightWisteria, plum, wetAsphalt, midnightBlue, hoki, ebonyClay, sunflower, tangerine, confetti, capeHoney, carrot, pumpkin, ecstasy, jaffa, alizarin, pomegranate, monza, thunderbird, clouds, silver, gallery, iron, concrete, asbestos, pumice, lynch]
     }
 }
 

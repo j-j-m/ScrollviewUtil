@@ -14,15 +14,13 @@ public class ObjectDrawerController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
-    public var nodeTypeList: [GraphElement] = [ GraphElement(id: "a", name: "first", color: .red),
-                         GraphElement(id: "b", name: "second", color: .green),
-                         GraphElement(id: "c", name: "third", color: .blue),
-                         GraphElement(id: "d", name: "fourth", color: .cyan),
-                         GraphElement(id: "e", name: "fifth", color: .yellow),
-                         GraphElement(id: "f", name: "sixth", color: .magenta),
-                         GraphElement(id: "g", name: "seventh", color: .orange),
-                         GraphElement(id: "h", name: "eighth", color: .purple),
-                         GraphElement(id: "i", name: "ninth", color: .brown)]
+
+    
+    
+    //id isnt unique at this point
+    public var nodeTypeList: [GraphElement] = FlatUIColors.ColorCodes.list.map { GraphElement(id: $0, name: $0, color: FlatUIColors.solidColorFromHexCode($0)) }
+        
+
     
     @IBAction func closeObjectDrawer(sender: UIBarButtonItem) {
         self.slideMenuController()?.closeLeft()
@@ -31,6 +29,9 @@ public class ObjectDrawerController: UIViewController {
     
     override public func viewDidLoad() {
         
+        
+        
+    //    ColorCodes.allProperties()
         collectionView.register(ObjectCell.self, forCellWithReuseIdentifier: "Cell")
     }
 

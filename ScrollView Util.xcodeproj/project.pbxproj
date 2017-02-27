@@ -14,6 +14,8 @@
 		A0B7FDD51E62375300EAE02A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD41E62375300EAE02A /* Node.swift */; };
 		A0B7FDD71E62ACCF00EAE02A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */; };
 		A0B7FDD91E62AFE800EAE02A /* DragDropProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDD81E62AFE800EAE02A /* DragDropProtocol.swift */; };
+		A0B7FDE01E63DB7400EAE02A /* FlatUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDDF1E63DB7400EAE02A /* FlatUIColors.swift */; };
+		A0B7FDE21E63DD5300EAE02A /* PropertyEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7FDE11E63DD5300EAE02A /* PropertyEnumerable.swift */; };
 		A0F08F121E5EB1B900A653BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F111E5EB1B900A653BE /* AppDelegate.swift */; };
 		A0F08F141E5EB1B900A653BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F08F131E5EB1B900A653BE /* ViewController.swift */; };
 		A0F08F171E5EB1B900A653BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F08F151E5EB1B900A653BE /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		A0B7FDD41E62375300EAE02A /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		A0B7FDD61E62ACCF00EAE02A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		A0B7FDD81E62AFE800EAE02A /* DragDropProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropProtocol.swift; sourceTree = "<group>"; };
+		A0B7FDDF1E63DB7400EAE02A /* FlatUIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatUIColors.swift; sourceTree = "<group>"; };
+		A0B7FDE11E63DD5300EAE02A /* PropertyEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyEnumerable.swift; sourceTree = "<group>"; };
 		A0F08F0E1E5EB1B900A653BE /* ScrollView Util.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScrollView Util.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08F111E5EB1B900A653BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0F08F131E5EB1B900A653BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				A0F08F3F1E61299700A653BE /* SlideMenuController.swift */,
+				A0B7FDDF1E63DB7400EAE02A /* FlatUIColors.swift */,
+				A0B7FDE11E63DD5300EAE02A /* PropertyEnumerable.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -510,12 +516,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B7FDE01E63DB7400EAE02A /* FlatUIColors.swift in Sources */,
 				A0B7FDD71E62ACCF00EAE02A /* MasterViewController.swift in Sources */,
 				A0F08F441E6148D900A653BE /* ObjectDrawerController.swift in Sources */,
 				A0F08F141E5EB1B900A653BE /* ViewController.swift in Sources */,
 				A0F08F401E61299700A653BE /* SlideMenuController.swift in Sources */,
 				A0F08F121E5EB1B900A653BE /* AppDelegate.swift in Sources */,
 				A016E9B41E6153170086A7BF /* ScopeDetailsPanel.swift in Sources */,
+				A0B7FDE21E63DD5300EAE02A /* PropertyEnumerable.swift in Sources */,
 				A0B7FDD91E62AFE800EAE02A /* DragDropProtocol.swift in Sources */,
 				A0F08F421E612CA600A653BE /* ContainerController.swift in Sources */,
 				A0B7FDD51E62375300EAE02A /* Node.swift in Sources */,
@@ -677,6 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JJM.ScrollView-Util";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -691,6 +700,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JJM.ScrollView-Util";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

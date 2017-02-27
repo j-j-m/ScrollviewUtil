@@ -177,7 +177,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qsG-t7-CKd" firstAttribute="top" secondItem="Dra-RT-XbQ" secondAttribute="bottom" constant="20" id="BIf-oW-NhC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hsW-Fb-n4a" secondAttribute="trailing" constant="-16" id="JN8-nG-XBf"/>

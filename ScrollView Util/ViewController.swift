@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         canvas = UIView(frame: CGRect(x: 0, y: 0, width: 100000, height: 100000))
        // canvas?.backgroundColor = UIColor.init(patternImage: UIImage(named: "scrollBacking" )! )
-        canvas?.backgroundColor = UIColor.init(patternImage: drawGridImage(CGSize(width:100, height:100))! )
+        canvas?.backgroundColor = UIColor.init(patternImage: drawGridImage(100)! )
         scrollView.addSubview(canvas!)
       
         // I dont like doing this. dunno why.
@@ -36,12 +36,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func drawGridImage(_ size: CGSize) -> UIImage? {
+    func drawGridImage(_ size: CGFloat) -> UIImage? {
         
         // could find a nice, smoother way to do this, may find a way to compose images at different scales.
         
     
-        var s = size.width
+        // determine scale
+        
+        var s = size
         if s <= 20 { s = 20 }
         else if s < 50 { s = 50 }
         else if s < 100 { s = 100 }
@@ -56,9 +58,12 @@ class ViewController: UIViewController {
         UIGraphicsBeginImageContextWithOptions(calcSize, opaque, scale)
         if let context = UIGraphicsGetCurrentContext() {
         
-        // Setup complete, do drawing here
+        // Setup complete
+            
+            
+        // Begin drawing
         context.setFillColor(UIColor.black.cgColor)
-        context.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
+        context.setStrokeColor(UIColor.white.withAlphaComponent(0.1).cgColor)
             context.setLineWidth(calcSize.width/20.0)
         
         context.stroke(bounds)
@@ -93,7 +98,7 @@ extension ViewController: UIScrollViewDelegate {
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
        let s = 1/scrollView.zoomScale
-    canvas?.backgroundColor = UIColor.init(patternImage: drawGridImage(CGSize(width:10*floor(s+1), height:10*floor(s+1)))! )
+    canvas?.backgroundColor = UIColor.init(patternImage: drawGridImage(10*floor(s+1))! )
     }
     
 

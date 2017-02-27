@@ -12,6 +12,8 @@ import UIKit
 
 class MasterController: SlideMenuController, DragDropCoordinator {
     
+    var focusedObject: Node?
+    
     public var sendController: DragDropSender? {
         didSet {
             if let controller = sendController as? UIViewController {
@@ -66,8 +68,8 @@ class MasterController: SlideMenuController, DragDropCoordinator {
     }
     
     
-    func handleObjectTransition(_ object: Node) {
-        recieveController?.recieve(object)
+    func handleObjectTransition(_ object: Node, position:CGPoint?) {
+        recieveController?.recieve(object, position: position)
     }
     
 }
@@ -78,16 +80,16 @@ extension MasterController {
         if gestureReconizer.state == UIGestureRecognizerState.began {
             
             if let controller = sendController as? ObjectDrawerController {
-                let p = gestureReconizer.location(in: controller.view)
+                let p = gestureReconizer.location(in: controller.collectionView)
                 let indexPath = controller.collectionView.indexPathForItem(at: p)
                 
                 if let index = indexPath {
                     self.slideMenuController()?.closeLeft()
                     self.slideMenuController()?.closeRight()
-                    var node = controller.nodeTypeList[index.item]
-                    handleObjectTransition(node)
+                    focusedObject = controller.nodeTypeList[index.item]
+                    
                     // do stuff with your cell, for example print the indexPath
-                    print(index.row)
+                    print("index row \(index.item)")
                 } else {
                     print("Could not find index path")
                 }
@@ -98,6 +100,14 @@ extension MasterController {
         }
         else if gestureReconizer.state == .changed {
             print(gestureReconizer.location(in: self.view))
+        }
+        else if gestureReconizer.state == .ended {
+            if let controller = recieveController as? ContainerController, focusedObject != nil {
+                let v = (controller.embeddedController as! ViewController).canvas
+                let newP = gestureReconizer.location(in: v!)
+                handleObjectTransition(focusedObject!, position: newP)
+                focusedObject = nil
+            }
         }
     }
 }

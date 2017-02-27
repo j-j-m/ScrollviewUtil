@@ -37,9 +37,12 @@ class ContainerController: SlideMenuController {
 }
 
 extension ContainerController: DragDropReciever {
-    func recieve(_ object: Node) {
+    func recieve(_ object: Node, position: CGPoint?) {
         if let controller = embeddedController as? ViewController {
             let nodeView = object.graphRepresentation()
+            if let p = position {
+                nodeView.center = p
+            }
             controller.canvas?.addSubview(nodeView)
             print("object recieved")
         }

@@ -11,10 +11,12 @@ import UIKit
 
 
 public protocol DragDropCoordinator {
+    var focusedObject: Node? { get set }
+    
     var sendController: DragDropSender? { get set }
     var recieveController: DragDropReciever? { get set }
     
-    func handleObjectTransition(_ object: Node)
+    func handleObjectTransition(_ object: Node, position: CGPoint?)
     
 }
 
@@ -27,5 +29,5 @@ public protocol DragDropSender {
 public protocol DragDropReciever {
 //    var coordinator: DragDropCoordinator { get }
     
-    func recieve(_ object: Node)
+    func recieve(_ object: Node, position:CGPoint?)
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollView Util/MasterViewController.swift"
-            timestampString = "509788176.921203"
+            timestampString = "509844382.293932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "handleLongPress(_:)"
             landmarkType = "7">
             <Locations>

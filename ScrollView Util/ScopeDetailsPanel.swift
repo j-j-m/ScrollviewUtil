@@ -9,8 +9,7 @@
 import Foundation
 import Eureka
 
-typealias Emoji = String
-let 👦🏼 = "👦🏼", 🍐 = "🍐", 💁🏻 = "💁🏻", 🐗 = "🐗", 🐼 = "🐼", 🐻 = "🐻", 🐖 = "🐖", 🐡 = "🐡"
+
 
 
 
